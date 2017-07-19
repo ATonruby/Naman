@@ -1,0 +1,44 @@
+
+@media screen and (min-width: 320px) and (max-width: 1190px){
+
+  #logo > img {
+    width: 70%;
+    margin: 20px auto;
+  }
+
+  #wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: auto;
+    height: auto;
+  }
+
+  .block {
+    display: block;
+    margin-bottom: 30px;
+    border-bottom: #999 dotted 1px;
+    padding-bottom: 30px;
+  }
+
+  .content, .leftBlock, .rightBlock, .contentBlock, .partnerMedia, .form, .element, .address_block {
+    display: block;
+    width: auto;
+  }
+  .partnerMedia > img {
+    margin: 50px auto;
+    width: 70%;
+  }
+
+  .form {
+    padding: 15px;
+    margin-bottom: 0;
+  }
+
+  .form > .field {
+    width: auto;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  .icons { -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -ms-flex-pack: distribute; justify-content: space-around; }
+  .icons > li { display: inline-block; }
+}

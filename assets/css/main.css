@@ -1,0 +1,464 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 100%;
+}
+
+body, input, select, textarea {
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.65;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  background-color: beige;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  border-bottom: #333 dotted 1px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  margin: 0 0 0.75rem 0;
+  letter-spacing: -0.05em;
+}
+
+p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  margin: 0 0 1.5rem 0;
+  color: black;
+  line-height: 1.65;
+}
+
+h1.major, h2.major, h3.major {
+  position: relative;
+}
+
+h1.major {
+  color: #1e90ff;
+  font-size: 3.5rem;
+  margin: 0 0 2.625rem 0;
+  text-transform: uppercase;
+}
+
+h1.major:after, h2.major:after, h3.major:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 3.5rem;
+  height: 0.1rem;
+  background-color: black;
+}
+
+h1.major:after {
+  bottom: -1.325rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+  line-height: 1.2;
+  color: black;
+}
+
+h2.major {
+  margin: 1.9875rem auto;
+}
+
+h2.major:after {
+  bottom: -1.2rem;
+}
+
+h3 {
+  font-size: 1.325rem;
+  color: black;
+}
+
+h3.major { margin: 0 0 1.875rem 0; }
+
+h3.major:after {
+  bottom: -0.75rem;
+}
+
+
+/* ============================== */
+#wrapper {
+  background-color: white;
+  width: 96vw;
+  height: 92vh;
+  margin: 2%;
+  padding: 1%;
+  -webkit-box-shadow: 0 2rem 4rem 0.25rem rgba(46, 43, 55, 0.575);
+          box-shadow: 0 2rem 4rem 0.25rem rgba(46, 43, 55, 0.575);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: 95vw;
+}
+
+#logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.duo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2%;
+  width: 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.media {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.leftBlock {
+  width: 20%;
+}
+
+.grailBlock { width: 35%; }
+
+.rightBlock {
+  width: 80%;
+  padding: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 100%;
+}
+
+.element {
+  padding: 15px;
+}
+
+.element > strong {
+  display: block;
+  font-size: 3rem;
+  font-weight: normal;
+  color: #1e90ff;
+}
+
+.contentBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50%;
+  margin: auto;
+}
+
+.profileBlock {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 2%;
+  /* width: 50%; */
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.partnerContent {
+  width: 30%;
+}
+
+.partnerMedia {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.formBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+input[type="text"], input[type="number"], input[type="password"], input[type="email"], input[type="tel"], select, textarea {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: transparent;
+  border: solid 2px #b9bbbd;
+  border-radius: 0.25rem;
+  color: black;
+  display: block;
+  outline: 0;
+  padding: 0 0.75rem;
+  text-decoration: none;
+  width: 100%;
+}
+
+label {
+  color: black;
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin: 0 0 0.4875rem 0;
+}
+
+input[type="text"], input[type="number"], input[type="password"], input[type="email"], select {
+  height: 2.8rem;
+}
+
+form > .field {
+  /* padding: 1.5rem 0 0 1.5rem; */
+  /* width: calc(100% - 1.5rem); */
+}
+
+.contact_block {
+ display: -webkit-box;
+ display: -ms-flexbox;
+ display: flex;
+ -webkit-box-orient: vertical;
+ -webkit-box-direction: normal;
+     -ms-flex-direction: column;
+         flex-direction: column;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.contact:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.form > .field {
+  margin-right: 20px;
+  position: relative;
+  width: 25vw;
+}
+
+input[type="radio"] {
+  position: absolute;
+  cursor: pointer;
+  opacity: 0;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+input[type="radio"] + label {
+  text-decoration: none;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 300;
+  margin-bottom: 0;
+  padding-left: 2.5rem;
+  padding-right: 1rem;
+}
+
+input[type="radio"] + label:before {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+input[type="radio"] + label:before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  line-height: 1.4375rem;
+  background: rgba(255, 255, 255, 0.075);
+  border: solid 1px #b9bbbd;
+  color: #2e2b37;
+  text-align: center;
+  border-radius: 100%;
+}
+
+input[type="radio"]:checked + label:before {
+  content: '\f00c';
+  border-radius: 100%;
+  background: #1e90ff;
+  border-color: #1e90ff;
+  color: white;
+}
+
+input[type="submit"], input[type="reset"], button[type="submit"] {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, -webkit-box-shadow 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, -webkit-box-shadow 0.2s ease-in-out;
+    -o-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out, -webkit-box-shadow 0.2s ease-in-out;
+    background-color: #b9bbbd;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border: transparent solid 2px;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.6rem;
+    font-weight: 700;
+    height: 2.75rem;
+    letter-spacing: 0.15rem;
+    line-height: 2.75rem;
+    padding: 0 1.5rem 0 1.65rem;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+input[type="submit"]:focus, input[type="reset"]:focus, button[type="submit"]:focus {
+  outline: none;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover, button[type="submit"]:hover {
+  background-color: white;
+  border: #1e90ff solid 2px;
+  color: #1e90ff !important;
+}
+
+.address_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.element {
+  width: 25vw;
+}
+
+.icons {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.icons > li:not(:last-child) { margin-bottom: 20px }
+.icons > li > a { border-bottom: none; font-size: 2rem; }
+.icons > li > a:before { color: black }
