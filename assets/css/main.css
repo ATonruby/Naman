@@ -6,6 +6,8 @@
   font-size: 100%;
 }
 
+::-webkit-scrollbar { display: none; }
+
 body, input, select, textarea {
   font-family: "Source Sans Pro", Helvetica, sans-serif;
   font-size: 1rem;
@@ -108,6 +110,7 @@ h3.major:after {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   overflow-x: auto;
+  overflow-y: hidden;
   -webkit-overflow-scrolling: touch;
   -ms-overflow-style: -ms-autohiding-scrollbar;
 }
