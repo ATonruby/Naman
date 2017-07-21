@@ -42,4 +42,75 @@
   }
   .icons { -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -ms-flex-pack: distribute; justify-content: space-around; }
   .icons > li { display: inline-block; }
+
+  #ham_menu {
+    display: block;
+    position: relative;
+    padding: 2%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+
+  #hamburger {
+    background: url(../../images/ham_menu.png) no-repeat 0 0;
+    width: 30px;
+    background-size: contain;
+    height: 30px;
+    text-indent: -9999px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .ham_menu_nav {
+    /* position: absolute;
+    background-color: darkseagreen;
+    width: 96vw;
+    left: 2%;
+    list-style: none;
+    top: 38px; */
+    top: 46px;
+    -webkit-transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+    -o-transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+    transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+    width: 96vw;
+    left: 100%;
+    position: absolute;
+  }
+
+  .ham_menu_visible {
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+    left: 2%;
+    -webkit-transform: translateY(0%);
+        -ms-transform: translateY(0%);
+            transform: translateY(0%);
+    -webkit-transition-delay: 0s, 0s, 0.3s;
+         -o-transition-delay: 0s, 0s, 0.3s;
+            transition-delay: 0s, 0s, 0.3s;
+    background-color: cornflowerblue;
+  }
+
+  .ham_menu_nav > a {
+    color: beige;
+    display: block;
+    padding: 5px 10px;
+    border-bottom: beige dotted 1px;
+  }
+
+  .ham_menu_nav > a:last-child {
+    border-bottom: none;
+  }
 }
