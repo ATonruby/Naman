@@ -21,7 +21,7 @@
     padding-bottom: 30px;
   }
 
-  .content, .leftBlock, .rightBlock, .contentBlock, .partnerMedia, .form, .element, .address_block, .faq_content > * {
+  .profile, .content, .leftBlock, .rightBlock, .contentBlock, .partnerMedia, .form, .element, .address_block, .faq_content > * {
     display: block;
     width: auto;
   }
